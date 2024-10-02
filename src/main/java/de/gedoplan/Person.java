@@ -1,7 +1,5 @@
 package de.gedoplan;
 
-import java.time.LocalDate;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -25,11 +23,11 @@ public class Person {
 
   private String name;
 
-  private LocalDate birthDay;
+  private String firstname;
 
-  public Person(String name, LocalDate birthDay) {
+  public Person(String name, String firstname) {
     this.name = name;
-    this.birthDay = birthDay;
+    this.firstname = firstname;
   }
 
 }
