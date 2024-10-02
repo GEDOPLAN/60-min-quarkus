@@ -1,6 +1,8 @@
 # A docker compose file to start a PostgreSQL DB
 version: '3.1'
 
+name: 60-min-quarkus
+
 services:
 
   postgres:
