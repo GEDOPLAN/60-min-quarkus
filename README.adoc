@@ -1,0 +1,33 @@
+= Demo zum Vortrag "Quarkus in 60 Minuten"
+
+Diese einfache Anwendung zeigt
+
+* wie Quarkus-Anwendungen strukturiert sind,
+* persistente Klassen inkl. Repository und Dev Service für PostgreSQL,
+* ein REST API,
+* Test Code inkl. Continuous Testing im Dev Mode,
+* Bau und Lauf als native Awendung.
+
+---
+
+Live Coding::
+
+Im Verzeichnis `script` befinden sich Shell Scripts zum stückweisen Ausbau der Anwendung:
+
+* `live-coding-0-init.sh`:
+** Beginn der Live Coding Session.
+** Versetzt den Anwendungscode in den Zustand, der nach einem Aufsetzen des Projekts existieren würde.
+** Ausnahme: Es sind bereits Dependencys für Hibernate, PostgreSQL und Lombok enthalten.
+** Demo: Bauen der Anwendung, Starten im Prod und Dev Mode.
+
+* `live-coding-1-persistence.sh`:
+** Ergänzt Entity, Repository und Konfiguration sowie REST API.
+** Demo: Schreiben und Lesen mittels `curl-*.sh`, Dev Service für DB.
+
+* `live-coding-2-test.sh`:
+** Ergänzt Testklasse.
+** Demo: Test, Continuous Testing im Dev Mode.
+
+* `live-coding-3-native.sh`:
+** Baut die Anwendung als Native Executable.
+** Demo: Start der nativen Anwendung.
